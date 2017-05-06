@@ -201,8 +201,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-logo {
     float: left;
-    width: 15.5rem;
-    padding-left: 1px;
+    width: 9.1rem;
+}
+.header-logo img {
+    height: auto;
+}
+@media screen and (min-width: 640px) {
+    .header-logo {
+        width: 15.5rem;
+        padding-left: 0.1rem;
+    }
 }
 .header-menu,
 .header-menu li {
@@ -228,8 +236,30 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
     line-height: 1;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     padding: 2.5rem 0 1.7rem 0;
+}
+@media screen and (max-width: 640px) {
+    .header-menu .header-submenu {
+        width: 100%;
+        display: block;
+        position: static;
+    }
+    .header-menu li {
+        border-top: solid 1px #ccc;
+    }
+}
+@media screen and (min-width: 640px) {
+    .header-menu {
+        float: right;
+    }
+    .header-menu li {
+        margin-left: 4rem;
+        display: inline-block;
+    }
+    .header-menu a {
+        display: inline-block;
+    }
 }
 .header-menu a:hover {
     color: #5094f2;
@@ -272,6 +302,24 @@ li:hover .header-submenu {
 div.services {
     max-width: 967px;
     margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media and (min-width:768) {
+    .header,
+    .carousel-inner,
+    .features-list,
+    .footer,
+    .content-inner,
+    .hero-title, 
+    .contact,
+    .hero-services-title,
+    div.services {
+        max-width: 967px;
+        margin: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 /* Containers */
 
