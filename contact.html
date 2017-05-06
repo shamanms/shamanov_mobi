@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Mobi</title>
+    <meta name="charset" content="utf-8" />
+    <meta name="keywords" content="mobile, applications" />
+    <meta name="description" content="Shop of mobile applications" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/normalize/normalize.css" />
+    <link href="https://select2.github.io/dist/css/select2.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+    <div class="header clearfix">
+        <a class="header-logo" href="index.html"><img src="img/logo.png" width="155" height="44" alt="Mobi" /></a>
+        <ul class="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="contact-services.html">Services</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main-contact">
+        <div class="hero">
+            <div class="hero-title">
+                <h1>TALK TO US?</h1>
+                <p>The form below can help us help you better.</p>
+            </div>
+        </div>
+        <div class="contact clearfix">
+            <div class="contact-forms">
+                <h2>Contact Us</h2>
+                <h3>Just ask us anything</h3>
+                <form action="POST" novalidate>
+                    <label for="request">subject for your message</label>
+                    <select class="request" id="request" name="request">
+                        <option>Fees for FOI Services</option>
+                        <option>Before submitting your request</option>
+                        <option>General information request</option>
+                        <option>Freedom of Information</option>
+                    </select>
+                    <label for="email">contact details</label>
+                    <input type="text" placeholder="Your Name (optional)">
+                    <input type="email" id="email" placeholder="Email">
+                    <label for="textarea">your inquiry or comments</label>
+                    <textarea id="textarea" placeholder="Message (optional)"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div class="adress">
+                    <h3>global headquarters</h3>
+                    <p>41 University Drive, Suite 202 Newtown, PA 18940, USA</p>
+                    <span>P: +1-267-759-9000</span>
+                    <span>F: +1-267-759-8989</span>
+                </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Copyright &copy; 2016
+        </p>
+    </div>
+    <script type="text/javascript" src="https://select2.github.io/vendor/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://select2.github.io/dist/js/select2.full.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".request").select2();
+        });
+    </script>   
+</body>
+</html>
