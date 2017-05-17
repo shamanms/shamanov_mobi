@@ -11,6 +11,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
+    <ul class="off-canvas-menu">
+        <li><a href="#link">Additional link</a></li>
+        <li><a href="#link">Additional contact</a></li>
+        <li><a href="#link">FAQ</a></li>
+    </ul>
     <div class="header clearfix">
         <a class="header-logo" href="index.html"><img src="img/logo.png" width="155" height="44" alt="Mobi" /></a>
         <ul class="header-menu">
@@ -103,17 +108,19 @@
             <div class="content-inner clearfix">
                 <h1>The Shopping cart</h1>
                 <img class="content-img" width="371" height="279" src="img/cart.png" alt="Cart" />
-                <h2>Some Bullet text here</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    When an unknown printer took a galley of type and scrambled
-                    It to make a type specimen book. It has survived not only five centuries</p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    When an unknown printer took a galley of type and scrambled
-                    It to make a type specimen book. It has survived not only five centuries
-                </p>
+                    <h2>Some Bullet text here</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                    <div class="content-accordion">
+                        <article class="accordion-row">
+                            <h3 class="accordion-headline">Our key benefit</h3>
+                            <div class="accordion-body">Flexibility, clarity, self driven development and addiction to work with all kind of businisses in our field</div>
+                        </article>
+                        <article class="accordion-row">
+                            <h3 class="accordion-headline">We respect our clients!</h3>
+                            <div class="accordion-body">Flexibility, clarity, self driven development and addiction to work with all kind of businisses in our field</div>
+                        </article>
+                </div>
             </div>
         </div>
     </div>
@@ -141,6 +148,14 @@
                 });
             });
         })();
+    </script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.accordion-row').click(function() {
+                $(this).toggleClass('active')
+            })
+        });
     </script>
 </body>
 </html>

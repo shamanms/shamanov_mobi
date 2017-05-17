@@ -52,7 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 .content-inner p {
     font-size: 1.5rem;
     line-height: 1.74;
-    margin-top: 2rem;
+}
+.content-accordion{
+    float:right;
+    
 }
 /* Content */
 
@@ -536,3 +539,48 @@ a.button {
     padding-right: 26rem;
 }
 /*services*/
+
+/*=off canvas*/
+.off-canvas-menu {
+    background: #5094f2;
+    position: fixed;
+    top: 50%;    
+    font-size: 2rem;
+    transform: translateX(-98%) translateY(-50%);
+    transition: transform 0.3s;
+}
+.off-canvas-menu, .off-canvas-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.off-canvas-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.off-canvas-menu:hover {
+    transform: translate(0, -50%)
+}
+/*off canvas*/
+
+/*=accordion*/
+.accordion-headline,
+.accordion-body {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.accordion-headline {
+    cursor: pointer;
+    margin: 0.1rem 0;
+    background: lightblue;
+}
+.accordion-body {    
+    background: #ccc;
+    display: none;
+}
+.active .accordion-body {
+    display: block;
+}
+/*accordion*/
