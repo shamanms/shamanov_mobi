@@ -156,7 +156,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2.9rem;
     padding: 0.7rem 1rem 1.2rem 4.6rem;
     background: #5094f2;
-    /*transition: background .3s ease-in, color .5s ease-in;*/
     border-radius: 0.3rem;
     position: relative;
 }
@@ -273,29 +272,10 @@ div.services,
 .hero-about-us-title {
     max-width: 967px;
     margin: auto;
-<<<<<<< HEAD
     padding-left: 16px;
     padding-right: 16px;
 }
-@media and (min-width:768) {
-    .header,
-    .carousel-inner,
-    .features-list,
-    .footer,
-    .content-inner,
-    .hero-title, 
-    .contact,
-    .hero-services-title,
-    div.services,
-    .hero-about-us-title {
-        max-width: 967px;
-        margin: auto;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-=======
->>>>>>> parent of 62e5b89... mobile version#1
-}
+
 /* Containers */
 
 /*=content-hero*/
