@@ -201,16 +201,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-logo {
     float: left;
-    width: 9.1rem;
-}
-.header-logo img {
-    height: auto;
-}
-@media screen and (min-width: 640px) {
-    .header-logo {
-        width: 15.5rem;
-        padding-left: 0.1rem;
-    }
+    width: 15.5rem;
+    padding-left: 1px;
 }
 .header-menu,
 .header-menu li {
@@ -236,30 +228,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
     line-height: 1;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     padding: 2.5rem 0 1.7rem 0;
-}
-@media screen and (max-width: 640px) {
-    .header-menu .header-submenu {
-        width: 100%;
-        display: block;
-        position: static;
-    }
-    .header-menu li {
-        border-top: solid 1px #ccc;
-    }
-}
-@media screen and (min-width: 640px) {
-    .header-menu {
-        float: right;
-    }
-    .header-menu li {
-        margin-left: 4rem;
-        display: inline-block;
-    }
-    .header-menu a {
-        display: inline-block;
-    }
 }
 .header-menu a:hover {
     color: #5094f2;
@@ -303,6 +273,7 @@ div.services,
 .hero-about-us-title {
     max-width: 967px;
     margin: auto;
+<<<<<<< HEAD
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -322,6 +293,8 @@ div.services,
         padding-left: 16px;
         padding-right: 16px;
     }
+=======
+>>>>>>> parent of 62e5b89... mobile version#1
 }
 /* Containers */
 
