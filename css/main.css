@@ -521,7 +521,8 @@ li:hover .header-submenu {
 .contact,
 .hero-services-title,
 div.services,
-.hero-about-us-title {
+.hero-about-us-title,
+.about-inner{
     max-width: 967px;
     margin: auto;
     padding-left: 16px;
@@ -534,7 +535,8 @@ div.services,
     .footer,
     .content-inner,
     .contact-content,
-    .contact-us-c  {
+    .contact-us-c,
+    {
         padding-left: 0;
         padding-right: 0;
     }
@@ -546,7 +548,7 @@ div.services,
     background: url(../img/contact-hero.png) no-repeat 0 100%;
     background-size: cover;
     overflow: hidden;
-    height: 48.5rem;
+    max-height: 48.5rem;
     position:relative;
 }
 .hero:before {
@@ -558,15 +560,29 @@ div.services,
 }
 .hero-title h1 {
     position: relative;
-    font-size: 4.2rem;
-    padding-top: 12rem;
+    font-size: 2.5rem;
+    padding-top: 2rem;
     margin: 0;
 }
 .hero-title p {
     position: relative;
-    font-size: 3rem;
+    font-size: 1.5rem;
     max-width: 48.4rem;
     margin: 1rem 0;
+}
+@media (min-width: 640px) {
+    .hero { 
+        height: 48.5rem;
+    }
+    .hero-title h1 {
+        font-size: 4.2rem;
+        padding-top: 12rem;
+    }
+    .hero-title p {
+        position: relative;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
 }
 /*content-hero*/
 /*=contact*/
@@ -575,19 +591,16 @@ div.services,
     color: white;
 }
 .contact h2 {
-    font-size: 4.2rem;
+    font-size: 2.5rem;
     margin: 2rem 0 1rem 0;
 }
 .contact h3 {
     text-transform: uppercase;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     margin: 0 0 1rem 0;
 }
 .contact-forms h3 {
     color: rgb(170,170,170);
-}
-.contact-us-c .select-wrapper {
-    width: 209px;
 }
 .contact label {
     text-transform: uppercase;
@@ -609,16 +622,15 @@ div.services,
     height: 1.8rem;
 }
 .select2-container {
-    width: 21.3rem!important;
+    width: 100%!important;
 }
 .contact input{
-    width: 20.5rem;
-    height: 1.6rem;
+    width: 100%;
+    height: 1.8rem;
     padding-left: 0.4rem;
+    margin: 0.4rem 0;
 }
-#email {
-    margin-left: 2rem;
-}
+
 ::-webkit-input-placeholder {
     color: rgb(120, 127, 137);
     font-size: 1.4rem;
@@ -636,29 +648,29 @@ div.services,
     font-size: 1.4rem;
 }
 .contact textarea {
-    width: 44rem;
+    width: 100%;
     height: 8.5rem;
     resize: none;
     padding-left: 0.4rem;
 }
 .contact button {
     display: block;
-    width: 9.5rem;
-    height: 4rem;
+    width: 7.5rem;
+    height: 3rem;
     background-color: rgb(80,148,242);
     color: white;
-    font-size: 2.2rem;
+    font-size: 1.4rem;
     border: 0px;
-    border-radius: 0.2rem;
-    margin: 1rem 0 3rem 0;
+    border-radius: 0.4rem;
+    margin: 1rem auto 1.5rem auto;
 }
 .contact-forms {
-    float: left;
-    padding-right: 4rem;
+    width: 90%;
+    margin: 0 auto;
 }
 .adress p, 
 .adress span {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 .adress span:last-child:before {
@@ -667,8 +679,80 @@ div.services,
     margin: 0 1rem;
 }
 .adress {
-    float: right;
-    padding-top: 9rem;
+    width: 90%;
+    margin: 0 auto 1.5rem auto;
+}
+@media (min-width: 640px) {
+    .main-contact {
+        background-color: rgb(68,85,108);
+        color: white;
+    }
+    .contact h2 {
+        font-size: 4.2rem;
+        margin: 2rem 0 1rem 0;
+    }
+    .contact h3 {
+        text-transform: uppercase;
+        font-size: 2.6rem;
+        margin: 0 0 1rem 0;
+    }
+    .contact-forms h3 {
+        color: rgb(170,170,170);
+    }
+    .contact label {
+        text-transform: uppercase;
+        display: block;
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+    }
+    .select2-container {
+        width: 21.3rem!important;
+    }
+    .contact input{
+        width: 44%;
+        height: 1.8rem;
+        padding-left: 0.4rem;
+    }
+    #email {
+        margin-left: 4.3%;
+    }
+    .contact textarea {
+        width: 93%;
+        height: 8.5rem;
+        resize: none;
+        padding-left: 0.4rem;
+    }
+    .contact button {
+        display: block;
+        width: 9.5rem;
+        height: 4rem;
+        background-color: rgb(80,148,242);
+        color: white;
+        font-size: 2.2rem;
+        border: 0px;
+        border-radius: 0.2rem;
+        margin: 1rem 0 3rem 0;
+    }
+    .contact-forms {
+        float: left;
+        width: 50%;
+        min-height: 44rem;
+    }
+    .adress p, 
+    .adress span {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .adress span:last-child:before {
+        content: '';
+        border-left: 0.2rem solid white;
+        margin: 0 1rem;
+    }
+    .adress {
+        float: left;
+        padding-top: 9rem;
+        width: 50%;
+    }
 }
 /*contact*/
 
@@ -677,7 +761,7 @@ div.services,
     background: url(../img/office.png) no-repeat 0 100%;
     background-size: cover;
     overflow: hidden;
-    height: 48.5rem;
+    max-height: 48.5rem;
     position:relative;
 }
 .hero-services:before {
@@ -689,15 +773,28 @@ div.services,
 }
 .hero-services-title h1 {
     position: relative;
-    font-size: 4.2rem;
-    padding-top: 12rem;
+    font-size: 2.5rem;
+    padding-top: 2rem;
     margin: 0;
 }
 .hero-services-title p {
     position: relative;
-    font-size: 3rem;
-    max-width: 48.4rem;
+    font-size: 1.7rem;
     margin: 1rem 0;
+}
+@media (min-width: 640px) {
+    .hero-services {
+        height: 48.5rem;
+    }
+    .hero-services-title h1 {
+        font-size: 4.2rem;
+        padding-top: 12rem;
+    }
+    .hero-services-title p {
+        position: relative;
+        font-size: 3rem;
+        max-width: 48.4rem;
+    }
 }
 table {
     border-collapse: collapse;
@@ -737,22 +834,40 @@ a.button {
     font-size: 2.2rem;
     padding:0.5rem 1.7rem 0.6rem 1.6rem;
 }
+@media (max-width: 640px) {
+    td {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    td:before {
+        content: '';
+        display: block;
+        font-weight: bold;
+    }
+    tr {
+        display: block;
+    }
+    a.button {
+        font-size: 2rem;
+        padding:0.05rem 0.7rem 0.05rem 0.7rem;
+    }
+}
 .services img {
     margin: 2.5rem 0.5rem 3rem 0;
     float: left;
 }
 .services h2 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color: rgb(170,170,170);
     margin: 2rem 0 0.5rem 0;
 }
 .services span{
     color: rgb(170,170,170);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 .call-us{
     float: right;
-    max-width: 60%;
+    max-width: 70%;
 }
 @media (min-width: 640px) {
     .services h2 {
@@ -850,7 +965,7 @@ a.button {
     background: url(../img/our-team.png) no-repeat 0 100%;
     background-size: cover;
     overflow: hidden;
-    height: 48.5rem;
+    max-height: 48.5rem;
     position:relative;
 }
 .hero-about-us:before {
@@ -862,37 +977,49 @@ a.button {
 }
 .hero-about-us-title h1 {
     position: relative;
-    font-size: 4.2rem;
-    padding-top: 12rem;
+    font-size: 2.5rem;
+    padding-top: 2rem;
     margin: 0;
 }
 .hero-about-us-title p {
     position: relative;
-    font-size: 3rem;
+    font-size: 1.7rem;
     max-width: 48.4rem;
     margin: 1rem 0;
 }
+@media (min-width: 640px) {
+    .hero-about-us {
+        height: 48.5rem;
+    }
+    .hero-about-us-title h1 {
+        font-size: 4.2rem;
+        padding-top: 12rem;
+    }
+    .hero-about-us-title p {
+        position: relative;
+        font-size: 3rem;
+        max-width: 48.4rem;
+    }
+}
 /*contact-about*/
 .about {
-    margin-top: -30px;
+    margin-top: -3.5rem;
     background: #fff;
     color: rgb(51,51,51);
 }
 .about-inner {
-    max-width: 967px;
-    margin: auto;
     padding-top:3.5rem; 
     padding-bottom: 11.5rem;
 }
 .about-inner h1 {
-    font-size: 4.2rem;
+    font-size: 2.5rem;
     color: rgb(80,148,242);
 }
 span[data-tooltip] {
     font-weight: bold;
 }
 .about-content{
-	font-size: 1.6rem;
+	font-size: 1.5rem;
     line-height: 1.5;
 }
 [data-tooltip] {
@@ -902,12 +1029,12 @@ span[data-tooltip] {
 }
 .tooltiptext h1 {
     line-height: 1;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: rgb(80,148,242);
 }
 .tooltiptext div {
     line-height: 1.4;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: rgb(51,51,51);
 }
 .tooltiptext {
@@ -916,9 +1043,54 @@ span[data-tooltip] {
 .qtip {
     max-width: 42.5rem;
     max-height: 27.rem;
+    
 }
 .tooltip-img img {
     max-width: 21rem;
     display: block;
     margin: auto;
+}
+@media (min-width: 640px) {
+    .about-inner {
+        padding-top:3.5rem; 
+        padding-bottom: 11.5rem;
+    }
+    .about-inner h1 {
+        font-size: 4.2rem;
+        color: rgb(80,148,242);
+    }
+    span[data-tooltip] {
+        font-weight: bold;
+    }
+    .about-content{
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    [data-tooltip] {
+        cursor: pointer;
+        font-weight: bold;
+        position: relative;
+    }
+    .tooltiptext h1 {
+        line-height: 1;
+        font-size: 2.5rem;
+        color: rgb(80,148,242);
+    }
+    .tooltiptext div {
+        line-height: 1.4;
+        font-size: 1.8rem;
+        color: rgb(51,51,51);
+    }
+    .tooltiptext {
+        display: none;
+    }
+    .qtip {
+        max-width: 42.5rem;
+        max-height: 27.rem;
+    }
+    .tooltip-img img {
+        max-width: 21rem;
+        display: block;
+        margin: auto;
+    }
 }
