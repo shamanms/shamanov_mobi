@@ -534,8 +534,12 @@ div.services,
     .features-list,
     .footer,
     .content-inner,
-    .contact-content,
-    .contact-us-c,
+    .hero-title, 
+    .contact,
+    .hero-services-title,
+    div.services,
+    .hero-about-us-title,
+    .about-inner
     {
         padding-left: 0;
         padding-right: 0;
@@ -1056,7 +1060,7 @@ span[data-tooltip] {
 }
 .qtip {
     max-width: 42.5rem;
-    max-height: 27.rem;
+    max-height: 27rem;
     
 }
 .tooltip-img img {
