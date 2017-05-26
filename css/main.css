@@ -955,6 +955,7 @@ a.button {
         padding: 1.4rem 2rem;
         border-radius: 0.9rem;
         color: rgb(51,51,51);
+        transition: color 0.3s ease-in;
     }
     .accordion-headline {
         cursor: pointer;
@@ -963,7 +964,9 @@ a.button {
         font-size: 1.8rem;
         font-weight: 800;
     }
-
+    .accordion-headline:hover{
+        color: #fff;
+    }
     .accordion-headline:after {
         content: '';
         width: 2rem;
